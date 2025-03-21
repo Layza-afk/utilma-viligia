@@ -1,0 +1,78 @@
+[gd_scene load_steps=3 format=3 uid="uid://dltp33ofwv5r8"]
+
+[ext_resource type="Script" path="res://scripts/porta.gd" id="1_uxxmo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_672uo"]
+size = Vector2(10, 9.5)
+
+[node name="Porta" type="Area2D"]
+position = Vector2(312, 10)
+collision_layer = 8
+script = ExtResource("1_uxxmo")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.75)
+shape = SubResource("RectangleShape2D_672uo")
+
+[node name="slot_num" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="slot_num"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -37.0
+offset_right = 61.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.159302, 0.186553, 0.300654, 0.72549)
+
+[node name="ajust_p" type="VBoxContainer" parent="slot_num"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -35.5
+offset_right = 55.0
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="text_password" type="Label" parent="slot_num/ajust_p"]
+layout_mode = 2
+text = "Digite a senha"
+horizontal_alignment = 1
+
+[node name="ajuste" type="HBoxContainer" parent="slot_num/ajust_p"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="slot_1" type="LineEdit" parent="slot_num/ajust_p/ajuste"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+alignment = 1
+max_length = 1
+
+[node name="slot_2" type="LineEdit" parent="slot_num/ajust_p/ajuste"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+alignment = 1
+max_length = 1
+
+[node name="Button" type="Button" parent="slot_num/ajust_p"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 8
+text = "Enviar"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="pressed" from="slot_num/ajust_p/Button" to="." method="_on_button_pressed"]

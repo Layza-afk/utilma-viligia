@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://da5agsha5fted"]
+
+[ext_resource type="Script" path="res://scripts/keys/key_2.gd" id="1_t6wvg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efq40"]
+size = Vector2(16, 16)
+
+[node name="Key_2" type="Area2D"]
+script = ExtResource("1_t6wvg")
+
+[node name="background" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_efq40")
+
+[node name="info_num_2" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="texture" type="ColorRect" parent="info_num_2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0980392, 0.117647, 0.2, 0.72549)
+
+[node name="ajuste" type="VBoxContainer" parent="info_num_2/texture"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="text" type="Label" parent="info_num_2/texture/ajuste"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Senha"
+horizontal_alignment = 1
+
+[node name="num_2" type="Label" parent="info_num_2/texture/ajuste"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
