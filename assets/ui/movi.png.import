@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yhnqdya6px3g"
-path="res://.godot/imported/forme.png-3c764b0c7be4f60d76dfadd1ba6502a5.ctex"
+uid="uid://dyhlgiixs3vcm"
+path="res://.godot/imported/movi.png-86b3041346141e754161579ed71d3f6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/forme.png"
-dest_files=["res://.godot/imported/forme.png-3c764b0c7be4f60d76dfadd1ba6502a5.ctex"]
+source_file="res://assets/ui/movi.png"
+dest_files=["res://.godot/imported/movi.png-86b3041346141e754161579ed71d3f6e.ctex"]
 
 [params]
 

@@ -26,6 +26,7 @@ func _on_button_pressed() -> void:
 	if slot_1.text == num_1 and slot_2.text == num_2:
 		Global.id_lvl +=1
 		print("Os números estão corretos!")
+		print(Global.id_lvl)
 		get_tree().change_scene_to_file(path + str(Global.id_lvl) + ".tscn")
 	else:
 		print("Os números estão incorretos.")

@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var text_info: Label = $text_info
+@onready var text_info: Sprite2D = $text_info
 @onready var canvas_layer: CanvasLayer = $CanvasLayer
 
 var can_interact: bool = false

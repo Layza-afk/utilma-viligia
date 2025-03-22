@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4dqopp8vrsxw"]
 
-[ext_resource type="Script" path="res://cenas/interações/item_falso.gd" id="1_10twg"]
+[ext_resource type="Script" path="res://scripts/item_falso.gd" id="1_10twg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nodd7"]
 
