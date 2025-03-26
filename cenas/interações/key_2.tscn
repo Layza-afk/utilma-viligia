@@ -8,19 +8,6 @@ size = Vector2(16, 16)
 [node name="Key_2" type="Area2D"]
 script = ExtResource("1_t6wvg")
 
-[node name="background" type="ColorRect" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 8.0
-offset_bottom = 8.0
-grow_horizontal = 2
-grow_vertical = 2
-
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_efq40")
 
@@ -64,6 +51,8 @@ horizontal_alignment = 1
 [node name="num_2" type="Label" parent="info_num_2/texture/ajuste"]
 layout_mode = 2
 horizontal_alignment = 1
+
+[node name="textura_item_2" type="Sprite2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

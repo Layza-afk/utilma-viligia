@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://0p7ijk5pli48" path="res://cenas/interações/tapete_p.tscn" id="3_415en"]
 [ext_resource type="PackedScene" uid="uid://bt5ojkewtit58" path="res://cenas/interações/key_1.tscn" id="5_8hvbi"]
 [ext_resource type="PackedScene" uid="uid://da5agsha5fted" path="res://cenas/interações/key_2.tscn" id="7_dcjg3"]
-[ext_resource type="PackedScene" uid="uid://b4dqopp8vrsxw" path="res://cenas/interações/item_falso.tscn" id="8_m3li6"]
+[ext_resource type="PackedScene" uid="uid://bphddiqfjjv5s" path="res://cenas/interações/item_falso.tscn" id="8_m3li6"]
 [ext_resource type="PackedScene" uid="uid://d26mlwouprrgj" path="res://cenas/UI/hud.tscn" id="9_8gw7s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cq31a"]
@@ -141,6 +141,17 @@ sources/0 = SubResource("TileSetAtlasSource_kvxge")
 [node name="fase_1" type="Node2D"]
 position = Vector2(37, 19)
 
+[node name="back" type="ColorRect" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -37.0
+offset_top = -18.0
+offset_right = 602.0
+offset_bottom = 341.0
+grow_vertical = 2
+color = Color(0.598612, 0.243481, 0.348005, 1)
+
 [node name="conjunto_da_sala" type="Node2D" parent="."]
 
 [node name="sala" type="Node2D" parent="conjunto_da_sala"]
@@ -155,7 +166,7 @@ tile_map_data = PackedByteArray("AAACAAQAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAQAAAABAAA
 tile_set = SubResource("TileSet_2h3jj")
 
 [node name="Porta" parent="." instance=ExtResource("2_fy68f")]
-position = Vector2(312, 60)
+position = Vector2(320, 64)
 
 [node name="tapete_p" parent="." instance=ExtResource("3_415en")]
 
@@ -163,12 +174,18 @@ position = Vector2(312, 60)
 position = Vector2(156, 187)
 
 [node name="Key_2" parent="." instance=ExtResource("7_dcjg3")]
-position = Vector2(470, 135)
+position = Vector2(437, 126)
 
 [node name="item_falso" parent="." instance=ExtResource("8_m3li6")]
 position = Vector2(93, 114)
+
+[node name="item_falso2" parent="." instance=ExtResource("8_m3li6")]
+position = Vector2(318, 225)
 
 [node name="Player" parent="." instance=ExtResource("2_bb8ot")]
 position = Vector2(320, 83)
 
 [node name="Hud" parent="." instance=ExtResource("9_8gw7s")]
+
+[node name="item_falso3" parent="." instance=ExtResource("8_m3li6")]
+position = Vector2(484, 160)

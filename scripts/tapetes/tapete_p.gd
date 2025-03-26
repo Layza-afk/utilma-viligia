@@ -11,16 +11,16 @@ var interface_open: bool = false
 
 var lvls_charadas = {
 	0: {
-		"sala 1": "algo referente ao objeto da sala 1 da fase 0",
-		"sala 2": "algo referente ao objeto da sala 2 da fase 0"
+		"sala 1": "Sou uma construção gigante, com lados triangulares que tocam o céu. \nDentro demim, descansa a realeza de tempos atrás. Quem sou?",
+		"\nsala 2": "Sou um objeto utilizado para calcular e medir. Na arquitetura e comércio, \nminha utilidade era sem preceder. Quem sou?"
 	},
 	1: {
-		"Sala 1": "algo referente ao objeto da sala 1 da fase 1",
-		"Sala 2": "algo referente ao objeto da sala 1 da fase 1"
+		"Sala 1": "Sou uma competição atlética, iniciada em terra grega. \nEntre Zeus e a chama eterna, sou tradição que nunca seca. Quem sou?",
+		"\nSala 2": "Construí estradas e aquedutos, meu império não tinha igual. \nGovernava terras vastas, dos Alpes ao mar Mediterrâneo afinal. Quem sou?"
 	},
 	2: {
-		"Sala 1": "algo referente ao objeto da sala 1 da fase 2",
-		"Sala 2": "algo referente ao objeto da sala 1 da fase 2"
+		"Sala 1": "Fui iniciado como um chamado por terras sagradas, cruzando desertos \ne mares em jornadas ousadas. Meu objetivo: recuperar o que foi perdido. Quem sou?",
+		"\nSala 2": "Eu trouxe terror à Idade Média, com doença e desespero \npor onde passava. Fiz reis e camponeses igualmente padecer. Quem sou?"
 	}
 }
 

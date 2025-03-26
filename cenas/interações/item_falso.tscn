@@ -1,21 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4dqopp8vrsxw"]
+[gd_scene load_steps=3 format=3 uid="uid://bphddiqfjjv5s"]
 
 [ext_resource type="Script" path="res://scripts/item_falso.gd" id="1_10twg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nodd7"]
+size = Vector2(14, 14)
 
 [node name="item_falso" type="Area2D"]
 script = ExtResource("1_10twg")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(20, 20)
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0.891122, 0.34293, 0.373037, 1)
-
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_nodd7")
+
+[node name="textura" type="Sprite2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

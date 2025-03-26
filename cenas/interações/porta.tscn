@@ -1,15 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://dltp33ofwv5r8"]
+[gd_scene load_steps=6 format=3 uid="uid://dltp33ofwv5r8"]
 
 [ext_resource type="Script" path="res://scripts/porta.gd" id="1_uxxmo"]
+[ext_resource type="Texture2D" uid="uid://d2f52oludjbpp" path="res://assets/tiles/cave.png" id="2_uql2u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_672uo"]
-size = Vector2(10, 9.5)
+size = Vector2(15, 14.75)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wg70f"]
+resource_name = "porta"
+texture = ExtResource("2_uql2u")
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_26kcy"]
+physics_layer_0/collision_layer = 2
+sources/0 = SubResource("TileSetAtlasSource_wg70f")
 
 [node name="Porta" type="Area2D"]
 collision_layer = 8
 script = ExtResource("1_uxxmo")
 
 [node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(-8, -6)
 shape = SubResource("RectangleShape2D_672uo")
 
 [node name="textura" type="Sprite2D" parent="."]
@@ -72,6 +84,10 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 8
 text = "Enviar"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 2, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_26kcy")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

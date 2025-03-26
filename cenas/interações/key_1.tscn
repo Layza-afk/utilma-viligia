@@ -16,9 +16,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -8.0
-offset_top = -8.0
+offset_top = -7.0
 offset_right = 8.0
-offset_bottom = 8.0
+offset_bottom = 9.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -65,6 +65,8 @@ horizontal_alignment = 1
 [node name="num_1" type="Label" parent="info_num_1/texture/ajuste"]
 layout_mode = 2
 horizontal_alignment = 1
+
+[node name="textura_item_1" type="Sprite2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
