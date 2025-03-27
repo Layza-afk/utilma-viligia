@@ -5,6 +5,8 @@ extends Area2D
 
 @onready var text_charada: Label = $CanvasLayer/text
 @onready var texture_txt: ColorRect = $CanvasLayer/texture_txt
+@onready var interrogar: AnimatedSprite2D = $"?"
+
 
 var can_interact: bool = false
 var interface_open: bool = false
@@ -26,6 +28,7 @@ var lvls_charadas = {
 
 func _on_body_entered(body: Node2D) -> void:
 	text_info_E.visible = true
+	interrogar.visible = false
 	can_interact = true
 
 func _on_body_exited(body: Node2D) -> void:

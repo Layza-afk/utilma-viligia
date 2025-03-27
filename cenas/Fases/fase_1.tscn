@@ -169,6 +169,7 @@ tile_set = SubResource("TileSet_2h3jj")
 position = Vector2(320, 64)
 
 [node name="tapete_p" parent="." instance=ExtResource("3_415en")]
+position = Vector2(331, 54)
 
 [node name="key_1" parent="." instance=ExtResource("5_8hvbi")]
 position = Vector2(156, 187)

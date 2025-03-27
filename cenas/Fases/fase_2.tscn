@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b3hojifsnqdc7" path="res://assets/tiles/tiles.png" id="1_t1o5f"]
 [ext_resource type="PackedScene" uid="uid://dltp33ofwv5r8" path="res://cenas/interações/porta.tscn" id="3_oy47o"]
 [ext_resource type="PackedScene" uid="uid://0p7ijk5pli48" path="res://cenas/interações/tapete_p.tscn" id="4_ohxed"]
-[ext_resource type="PackedScene" uid="uid://b4dqopp8vrsxw" path="res://cenas/interações/item_falso.tscn" id="5_m4nxr"]
+[ext_resource type="PackedScene" uid="uid://bphddiqfjjv5s" path="res://cenas/interações/item_falso.tscn" id="5_m4nxr"]
 [ext_resource type="PackedScene" uid="uid://bt5ojkewtit58" path="res://cenas/interações/key_1.tscn" id="6_yf60u"]
 [ext_resource type="PackedScene" uid="uid://da5agsha5fted" path="res://cenas/interações/key_2.tscn" id="7_xgw00"]
 [ext_resource type="PackedScene" uid="uid://g2urtx88oowr" path="res://cenas/charactes/player.tscn" id="8_lttx4"]
